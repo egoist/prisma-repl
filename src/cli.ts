@@ -1,10 +1,5 @@
 #!/usr/bin/env node
-let { NODE_OPTIONS = '' } = process.env
-
-process.env.NODE_OPTIONS = NODE_OPTIONS.split(',')
-  .concat(`--experimental-repl-await`)
-  .join(',')
-
+import path from 'path'
 import { cac } from 'cac'
 import repl from 'repl'
 
@@ -38,6 +33,6 @@ function loadContext() {
 }
 
 function createPrismaClient() {
-  const { PrismaClient } = require('@prisma/client')
+  const { PrismaClient } = require(path.resolve('node_modules/@prisma/client'))
   return new PrismaClient()
 }
