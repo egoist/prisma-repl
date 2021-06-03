@@ -4,7 +4,7 @@
 
 # prisma-repl
 
-[![npm version](https://badgen.net/npm/v/my-ts-lib)](https://npm.im/my-ts-lib)
+[![npm version](https://badgen.net/npm/v/prisma-repl)](https://npm.im/prisma-repl)
 
 A REPL for [Prisma](https://www.prisma.io/).
 
