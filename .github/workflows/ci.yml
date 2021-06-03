@@ -25,29 +25,22 @@ jobs:
         with:
           node-version: 14.x
 
-      - name: Cache ~/.pnpm-store
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-pnpm-store
+      - uses: actions/cache@v2
         with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-${{ matrix.node-version }}-build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-${{ matrix.node-version }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-${{ matrix.node-version }}-build-
-            ${{ runner.os }}-
-      - name: Install pnpm
-        run: npm i -g pnpm
+            ${{ runner.os }}-node-
 
       - name: Install deps
-        run: pnpm i
+        run: npm ci
 
       # Runs a set of commands using the runners shell
       - name: Build and Test
         run: npm run test
 
       - name: Release
-        run: pnpx -y semantic-release --branches main
+        run: npx semantic-release --branches main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
