@@ -1,8 +1,16 @@
 #!/usr/bin/env node
 import path from 'path'
-import spawn from 'cross-spawn'
+import execa from 'execa'
 
-spawn('node', ['--experimental-repl-await', path.join(__dirname, 'cli.js')], {
-  env: process.env,
-  stdio: 'inherit',
-})
+execa(
+  'node',
+  [
+    '--experimental-repl-await',
+    path.join(__dirname, 'cli.js'),
+    ...process.argv.slice(2),
+  ],
+  {
+    env: process.env,
+    stdio: 'inherit',
+  },
+)
