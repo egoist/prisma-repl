@@ -14,5 +14,5 @@ export const sh = (
       return acc + subst + lit
     })
   }
-  execa.commandSync(command, { stdio: 'inherit' })
+  execa.commandSync(command, { stdio: 'inherit', preferLocal: true })
 }
