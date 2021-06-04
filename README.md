@@ -34,7 +34,7 @@ After regenerating the Prisma client, type `.reload` in the REPL to reload it.
 
 You can directly run commands in the REPL using `sh` tag:
 
-<img width="938" alt="running commands in the repl" src="https://user-images.githubusercontent.com/8784712/120776752-23e57900-c557-11eb-94d2-adcca7bae49d.png">
+<img width="783" alt="running commands in the repl" src="https://user-images.githubusercontent.com/8784712/120778561-0a453100-c559-11eb-8cfe-e18cbfb7fb7e.png">
 
 ## License
 
