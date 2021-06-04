@@ -36,7 +36,11 @@ You can directly run commands in the REPL using `sh` tag:
 
 <img width="783" alt="running commands in the repl" src="https://user-images.githubusercontent.com/8784712/120778561-0a453100-c559-11eb-8cfe-e18cbfb7fb7e.png">
 
-For Prisma commands, you can use use the `prisma` shorthand.
+For Prisma commands, you can use use the `prisma` shorthand:
+
+<img width="769" alt="CleanShot 2021-06-04 at 17 46 27@2x" src="https://user-images.githubusercontent.com/8784712/120782702-d79d3780-c55c-11eb-83b1-850964393db8.png">
+
+The Prisma client is automatically reloaded in the REPL when you run commands like `prisma db push` or `prisma generate`.
 
 ## License
 
