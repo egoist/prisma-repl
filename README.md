@@ -36,6 +36,8 @@ You can directly run commands in the REPL using `sh` tag:
 
 <img width="783" alt="running commands in the repl" src="https://user-images.githubusercontent.com/8784712/120778561-0a453100-c559-11eb-8cfe-e18cbfb7fb7e.png">
 
+For Prisma commands, you can use use the `prisma` shorthand.
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/sponsors/egoist)

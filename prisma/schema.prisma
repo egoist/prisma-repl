@@ -15,7 +15,7 @@ model User {
   name String
 }
 
-model Post {
+model Post2 {
   id   Int    @id @default(autoincrement())
   name String
 }
