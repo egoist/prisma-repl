@@ -42,6 +42,25 @@ For Prisma commands, you can use use the `prisma` shorthand:
 
 The Prisma client is automatically reloaded in the REPL when you run commands like `prisma db push` or `prisma generate`.
 
+## Help
+
+```
+prisma-repl/0.0.0
+
+Usage:
+  $ prisma-repl <command> [options]
+
+Options:
+  --url <url>    Override database URL
+  --verbose      Show all Prisma logs
+  -v, --version  Display version number
+  -h, --help     Display this message
+```
+
+## Sponsors
+
+[![sponsors](https://sponsors-images.egoist.sh/sponsors.svg)](https://github.com/sponsors/egoibst)
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/sponsors/egoist)
