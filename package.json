@@ -22,7 +22,7 @@
     "@sucrase/jest-plugin": "^2.0.0",
     "@types/cross-spawn": "^6.0.2",
     "@types/jest": "^26.0.20",
-    "cac": "^6.7.3",
+    "cac": "6.7.12",
     "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
     "execa": "^5.1.0",
