@@ -21,7 +21,7 @@
     "@prisma/client": "^3.3.0",
     "@sucrase/jest-plugin": "^2.0.0",
     "@types/cross-spawn": "^6.0.2",
-    "@types/jest": "^26.0.20",
+    "@types/jest": "26.0.24",
     "cac": "^6.7.3",
     "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
