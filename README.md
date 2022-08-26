@@ -51,10 +51,11 @@ Usage:
   $ prisma-repl <command> [options]
 
 Options:
-  --url <url>    Override database URL
-  --verbose      Show all Prisma logs
-  -v, --version  Display version number
-  -h, --help     Display this message
+  --url <url>     Override database URL
+  --client <dir>  The output directory for your prisma client (default: node_modules/@prisma/client)
+  --verbose       Show all Prisma logs
+  -v, --version   Display version number
+  -h, --help      Display this message
 ```
 
 ## Sponsors
