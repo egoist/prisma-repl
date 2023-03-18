@@ -19,7 +19,7 @@
   "devDependencies": {
     "@egoist/prettier-config": "^0.1.0",
     "@prisma/client": "^3.3.0",
-    "@sucrase/jest-plugin": "^2.0.0",
+    "@sucrase/jest-plugin": "2.2.1",
     "@types/cross-spawn": "^6.0.2",
     "@types/jest": "^26.0.20",
     "cac": "^6.7.12",
